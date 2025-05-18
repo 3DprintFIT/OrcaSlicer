@@ -1,0 +1,12 @@
+{
+    "from": "User",
+    "inherits": "0.20mm Standard @Voron",
+    "is_custom_defined": "0",
+    "name": "BI-3DT 0.20mm @Voron 0.2",
+    "print_settings_id": "BI-3DT 0.20mm @Voron 0.2",
+    "skirt_loops": "2",
+    "sparse_infill_density": "10%",
+    "travel_speed": "500",
+    "version": "2.3.0.3",
+    "wall_loops": "2"
+}

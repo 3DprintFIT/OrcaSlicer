@@ -1,0 +1,28 @@
+{
+    "compatible_printers": [
+        "FIT Hybrix 0.4 nozzle"
+    ],
+    "fan_max_speed": [
+        "60"
+    ],
+    "filament_max_volumetric_speed": [
+        "10"
+    ],
+    "filament_settings_id": [
+        "PETG @Hybrix"
+    ],
+    "from": "User",
+    "inherits": "Generic PETG @System",
+    "is_custom_defined": "0",
+    "name": "PETG @Hybrix",
+    "nozzle_temperature": [
+        "245"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "245"
+    ],
+    "overhang_fan_speed": [
+        "60"
+    ],
+    "version": "2.3.0.3"
+}

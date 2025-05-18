@@ -1,0 +1,8 @@
+{
+    "from": "User",
+    "inherits": "FIT Hybrix 0.4 nozzle",
+    "is_custom_defined": "0",
+    "name": "FIT Hybrix",
+    "printer_settings_id": "FIT Hybrix",
+    "version": "2.3.0.3"
+}

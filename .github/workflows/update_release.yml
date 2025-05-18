@@ -1,0 +1,40 @@
+name: Update Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Create .zip file
+      run: zip -r profiles.zip ./filament ./machine ./process
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.sha }}
+        release_name: Release ${{ github.sha }}
+        body: |
+          This release includes the latest configuration profiles for the 3D printers at 3DprintFIT lab. Download the profiles.zip and import it into OrcaSlicer as described in the README.
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./profiles.zip
+        asset_name: profiles.zip
+        asset_content_type: application/zip 
