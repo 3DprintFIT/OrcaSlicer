@@ -1,11 +1,18 @@
 {
+    "accel_to_decel_enable": "0",
     "from": "User",
     "inherits": "0.20mm Standard @Voron",
+    "inner_wall_speed": "300",
+    "internal_solid_infill_speed": "250",
     "is_custom_defined": "0",
     "name": "BI-3DT 0.20mm @Voron 0.2",
+    "outer_wall_speed": "230",
     "print_settings_id": "BI-3DT 0.20mm @Voron 0.2",
     "skirt_loops": "2",
+    "sparse_infill_acceleration": "7000",
     "sparse_infill_density": "10%",
+    "sparse_infill_speed": "270",
+    "travel_acceleration": "15000",
     "travel_speed": "500",
     "version": "2.3.0.3",
     "wall_loops": "2"

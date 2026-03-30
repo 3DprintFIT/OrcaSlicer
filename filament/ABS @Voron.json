@@ -1,0 +1,24 @@
+{
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "filament_extruder_variant": [
+        "Direct Drive Standard"
+    ],
+    "filament_max_volumetric_speed": [
+        "20"
+    ],
+    "filament_settings_id": [
+        "ABS @Voron"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "105"
+    ],
+    "inherits": "Generic ABS @System",
+    "name": "ABS @Voron",
+    "pressure_advance": [
+        "0.024"
+    ],
+    "version": "2.3.1.10"
+}
